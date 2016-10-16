@@ -13,6 +13,6 @@ COPY cmd/registry/config-dev.yml /etc/docker/registry/config.yml
 RUN make PREFIX=/go clean binaries
 
 VOLUME ["/var/lib/registry"]
-EXPOSE 5000
+EXPOSE 6000
 ENTRYPOINT ["registry"]
 CMD ["serve", "/etc/docker/registry/config.yml"]
