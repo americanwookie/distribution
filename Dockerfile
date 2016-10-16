@@ -1,4 +1,4 @@
-FROM golang:1.6-alpine
+FROM resin/raspberrypi3-alpine-golang
 
 ENV DISTRIBUTION_DIR /go/src/github.com/docker/distribution
 ENV DOCKER_BUILDTAGS include_oss include_gcs
